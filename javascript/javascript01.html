@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,56 +12,68 @@
             margin: 0;
             padding: 0;
         }
+
         a {
             text-decoration: none;
             color: #000;
         }
+
         li {
             list-style: none;
         }
+
         #header {
             text-align: center;
             padding: 40px;
             border-bottom: 1px dashed #dcdcdc;
         }
+
         #header h1 {
             margin-bottom: 20px;
         }
+
         #header h1 a {
             font-size: 80px;
             font-family: "GmarketSans";
             color: #161366;
             text-transform: capitalize;
         }
+
         #header nav ul li {
             display: inline;
         }
+
         #header nav ul li a {
             display: inline-block;
             color: #161366;
             border: 1px solid #161366;
             padding: 10px 20px;
-            font-family: "nanumSquareNeo"; 
+            font-family: "nanumSquareNeo";
         }
+
         #header nav ul li.active a {
             background-color: #161366;
             color: #fff;
         }
+
         #main {
             border-bottom: 1px dashed #dcdcdc;
             padding: 40px;
         }
+
         #main .main__menu ul li a {
             font-family: "nanumSquareNeo";
             line-height: 1.8;
             color: #161366;
         }
+
         #main .main__menu ul li a:hover {
             text-decoration: underline;
             text-underline-position: under;
         }
     </style>
 </head>
+
 <body>
     <div id="wrap">
         <header id="header">
@@ -116,8 +129,76 @@
         <!-- //footer -->
     </div>
 
+
     <script>
+        // 01. 변수 : 데이터 저장
+        {
+            let x = 100;
+            let y = 200;
+            let z = "javascript";
+
+            // console.log(x);
+            // console.log(y);
+            // console.log(z);
+        }
+        // 02. 변수 : 데이터 저장 + 데이터 변경
+        {
+            let x = 100;  //변수 x에 숫자 100을 저장
+            let y = 200;
+            let z = "javascript";
+
+
+            x = 200;    // 변수 x에 값을 숫자 100에서 300으로 변경
+            y = 300;
+            z = "jaquery";
+
+            // console.log(x);
+            // console.log(y);
+            // console.log(z);
+        }
+
+        // 03. 변수 : 데이터 저장 + 데이터 변경 + 데이터 추가
+        {
+            let x = 100;
+            let y = 200;
+            let z = "javascript";
+
+            x += 100;
+            y += 300;
+            z += "jquery";
+
+            //console.log(x);
+            //console.log(y);
+            //console.log(z);
+        }
+
+        // 04. 상수 : 데이터 저장 + 데이터 변경(x) + 데이터 추가(x)
+        {
+            const x = 100;
+            const y = 200;
+            const z = "javascript";
+
+            //x = 200;
+            // y = 300;
+
+            // console.log(x);
+            // console.log(y);
+            // console.log(z);
+        }
+
+        //05. 배열 : 데이터 저장(여러개) : 표현방법1 : 배열 선언
+        {
+            const arr = new Array();   //배열을 선언
+            arr[0] = 100;
+            arr[1] = 200;
+            arr[2] = "javascript"
+
+            console.log(arr[0]);
+            console.log(arr[1]);
+            console.log(arr[2]);
+        }
 
     </script>
 </body>
+
 </html>
